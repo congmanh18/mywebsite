@@ -100,7 +100,7 @@ Generate a classic GitHub personal access token following these [instructions](h
 Note: Configuring environment variables before deploying your portfolio is highly recommended as some components depend on API data. 
 
 ```bash
-- DeveloperFolio
+- LucasDev
   - node_modules
   - public
   - src

@@ -49,77 +49,40 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "PASSIONATE BACKEND DEVELOPER BUILDING SCALABLE, SECURE, AND EFFICIENT SYSTEMS",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    emoji("⚡ Develop and maintain efficient server-side systems using modern backend technologies and microservices architectures."),
+    emoji("⚡ Build and automate CI/CD pipelines for seamless integration, deployment, and scaling of applications."),
+    emoji("⚡ Manage cloud infrastructure, ensuring high availability, security, and smooth scalability for applications."),
+    emoji("⚡ Implement monitoring and logging systems to track application performance and troubleshoot issues effectively."),
+    emoji("⚡ Collaborate with front-end teams to ensure seamless integration and optimal user experiences."),
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {                       
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
+    { skillName: "Golang", fontAwesomeClassname: "fas fa-cogs" },
+    { skillName: "PostGreSQL", fontAwesomeClassname: "fas fa-database" },
+    { skillName: "Docker", fontAwesomeClassname: "fab fa-docker" },
+    { skillName: "AWS", fontAwesomeClassname: "fab fa-aws" },
+    { skillName: "Firebase", fontAwesomeClassname: "fas fa-fire" },
+    { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
+    { skillName: "React", fontAwesomeClassname: "fab fa-react" },
+    { skillName: "GitHub", fontAwesomeClassname: "fab fa-github" },
+    { skillName: "GitLab", fontAwesomeClassname: "fab fa-gitlab" },
+    { skillName: "CI/CD", fontAwesomeClassname: "fas fa-code" },
+    { skillName: "GraphQL", fontAwesomeClassname: "fas fa-project-diagram" },
+    { skillName: "Digital Ocean", fontAwesomeClassname: "fab fa-digital-ocean" },
+    { skillName: "Redis", fontAwesomeClassname: "fas fa-database" },
+    { skillName: "Kubernetes", fontAwesomeClassname: "fas fa-cogs" },
+    { skillName: "RabbitMQ", fontAwesomeClassname: "fas fa-exchange-alt" },
+    { skillName: "Elasticsearch", fontAwesomeClassname: "fas fa-search" },
+    { skillName: "Kafka", fontAwesomeClassname: "fas fa-random" },
+
   ],
   display: true // Set false to hide this section, defaults to true
 };
-
 // Education Section
 
 const educationInfo = {
@@ -144,6 +107,20 @@ const educationInfo = {
       subHeader: "High School",
       duration: "September 2017 - May 2020",
       desc: "I was a student at Ly Tu Trong High School, where I studied hard and achieved good results in my studies. My school at that time was one of the best high schools in Binh Dinh province."
+    },
+    {
+      schoolName: "Hoai Son Secondary School",
+      logo: require("./assets/images/thcshs.png"),                       
+      subHeader: "Secondary School",
+      duration: "September 2013 - May 2017",
+      desc: ""
+    },
+    {
+      schoolName: "Hoai Son Primary School No. 1",
+      logo: require("./assets/images/thhs.png"),                       
+      subHeader: "Primary School",
+      duration: "September 2008 - May 2013",
+      desc: ""
     }
   ]                       
 };
@@ -212,8 +189,8 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projects",
+  subtitle: "MY PERSONAL PROJECTS AND SOME STARTUPS THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
       image: require("./assets/images/saayaHealthLogo.webp"),
@@ -228,8 +205,8 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
+      image: require("./assets/images/pethub.png"),
+      projectName: "PetHub",
       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       footerLink: [
         {
@@ -237,7 +214,30 @@ const bigProjects = {
           url: "http://nextu.se/"
         }
       ]
-    }
+    },
+    {
+      image: require("./assets/images/pethub.png"),
+      projectName: "PetHub",
+      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "http://nextu.se/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/pethub.png"),
+      projectName: "PetHub",
+      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "http://nextu.se/"
+        }
+      ]
+    },
+    
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -289,7 +289,7 @@ const achievementSection = {
     {
       title: "PWA Web App Developer",
       subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
+      image: require("./assets/images/pethub.png"),
       imageAlt: "PWA Logo",
       footerLink: [
         {name: "Certification", url: ""},

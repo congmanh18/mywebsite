@@ -13,13 +13,13 @@ export default function Footer() {
           {emoji("Lucas Dev - Nguyen Cong Manh")}
         </p>
         <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
-          Theme by{" "}
+          My Github: {" "}
           <a
-            href="https://github.com/saadpasta/developerFolio"
+            href="https://github.com/congmanh18"
             target="_blank"
             rel="noreferrer"
           >
-            developerFolio
+            congmanh18
           </a>
         </p>
       </div>

@@ -5,7 +5,9 @@ import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 import StyleContext from "../../contexts/StyleContext";
 import {
   greeting,
+  educationInfo,
   workExperiences,
+  bigProjects,
   skillsSection,
   openSource,
   blogSection,
@@ -17,6 +19,8 @@ import {
 function Header() {
   const {isDark} = useContext(StyleContext);
   const viewExperience = workExperiences.display;
+  const viewEducation = educationInfo.display;
+  const viewBigProjects = bigProjects.display;
   const viewOpenSource = openSource.display;
   const viewSkills = skillsSection.display;
   const viewAchievement = achievementSection.display;
@@ -41,14 +45,25 @@ function Header() {
           <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
         </label>
         <ul className={isDark ? "dark-menu menu" : "menu"}>
+          {viewResume && (
+            <li>
+              <a href="#resume">Resume</a>
+            </li>
+          )}
           {viewSkills && (
             <li>
               <a href="#skills">Skills</a>
             </li>
           )}
+         
           {viewExperience && (
             <li>
-              <a href="#experience">Work Experiences</a>
+              <a href="#experience">Experiences</a>
+            </li>
+          )}
+          {viewBigProjects && (
+            <li>
+              <a href="#projects">Projects</a>
             </li>
           )}
           {/* {viewOpenSource && (
@@ -66,16 +81,17 @@ function Header() {
               <a href="#blogs">Blogs</a>
             </li>
           )}
+          {viewEducation && (
+            <li>
+              <a href="#education">Education</a>
+            </li>
+          )}
           {/* {viewTalks && (
             <li>
               <a href="#talks">Talks</a>
             </li>
           )} */}
-          {viewResume && (
-            <li>
-              <a href="#resume">Resume</a>
-            </li>
-          )}
+          
           <li>
             <a href="#contact">Contact Me</a>
           </li>

@@ -18,6 +18,7 @@
 .skills-image-div > img {
   max-width: 100%;
   height: auto;
+  border-radius: 50%;
 }
 
 .skills-heading {
@@ -58,7 +59,10 @@
     text-align: center;
   }
   .skills-image-div {
-    /* display: none; */
-    order: 2;
+    display: flex;            /* Sử dụng Flexbox */
+    justify-content: center;  /* Căn giữa theo chiều ngang */
+    align-items: center;      /* Căn giữa theo chiều dọc */
+    height: 100vh;
+    max-width: 100%;
   }
 }

@@ -56,8 +56,8 @@
 .greeting-image-div > img {
   max-width: 100%;
   height: auto;
+  border-radius: 20%;
 }
-
 .wave-emoji {
   animation-duration: 1.8s;
   animation-iteration-count: infinite;
@@ -108,7 +108,7 @@
     text-align: center;
   }
   .greeting-text-p {
-    font-size: 16px;
+    font-size: 13px;
     line-height: normal;
     text-align: center;
   }

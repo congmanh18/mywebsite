@@ -20,11 +20,10 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Manh Nguyen",
+  title: "Hi all, I'm Manh",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
-  ),
+     "A passionate Backend Developer with expertise in Golang 🚀, experienced in building high-performance web systems, APIs, and microservices. Skilled in optimizing performance, managing databases, and deploying scalable applications."  ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -33,13 +32,14 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/congmanh18",
+  linkedin: "https://www.linkedin.com/in/congmanh18/",
+  gmail: "nguyenmanh180102@gmail.com",
+  gitlab: "https://gitlab.com/congmanh18",
+  facebook: "https://www.facebook.com/congmanh1801",
+  instagram: "https://www.instagram.com/manh18ng/",
+  // medium: "https://medium.com/@saadpasta",
+  // stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -100,7 +100,7 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "sql-database",
       fontAwesomeClassname: "fas fa-database"
     },
-    {
+    {                       
       skillName: "aws",
       fontAwesomeClassname: "fab fa-aws"
     },
@@ -126,25 +126,26 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Industrial University of Ho Chi Minh City",
+      logo: require("./assets/images/iuh.png"),
+      subHeader: "Engineering of Computer Engineering Technology",
+      duration: "September 2020 - August 2025",
+      desc: "Completed a graduation project on the development of a smart waste bin management and analysis system in Ho Chi Minh City, aiming to optimize waste collection and reduce environmental pollution.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Developed a smart waste bin system using ultrasonic sensors to monitor fill levels in real-time",
+        "Built a web interface for waste collection teams to monitor and plan waste pickup efficiently",
+        "Used data analysis to optimize waste collection schedules and allocate resources",
+        "Technologies used: IoT, Python, PostGreSQL, React, Docker, hosting VPS"
       ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "Ly Tu Trong High School",
+      logo: require("./assets/images/lytutrong.png"),                       
+      subHeader: "High School",
+      duration: "September 2017 - May 2020",
+      desc: "I was a student at Ly Tu Trong High School, where I studied hard and achieved good results in my studies. My school at that time was one of the best high schools in Binh Dinh province."
     }
-  ]
+  ]                       
 };
 
 // Your top 3 proficient stacks/tech experience
@@ -153,17 +154,17 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
+      Stack: "Golang", //Insert stack or technology you have experience in
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
-      progressPercentage: "70%"
+      Stack: "PostGreSQL",
+      progressPercentage: "80%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
-    }
+      Stack: "Docker",
+      progressPercentage: "70%"
+    },
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
@@ -174,29 +175,28 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      role: "Backend Developer",
+      company: "Techmaster Vietnam",
+      companylogo: require("./assets/images/techmaster.png"),
+      date: "March 2025 – Present",
+      desc: "I am a backend developer at Techmaster Vietnam, where I work on building and maintaining the backend infrastructure for the company's products and services."
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
+      role: "Backend Developer",
+      company: "CMN Express",
+      companylogo: require("./assets/images/cmnexpress.png"),
       date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "I was a backend developer at CMN Express, where I worked on building and maintaining the backend infrastructure for the company's products and services."
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "DBA Intern ",
+      company: "HPT Vietnam Corporation",
+      companylogo: require("./assets/images/hpt.webp"),
+      date: "June 2018 – Present",
+      // desc: "I was a DBA intern at HPT Vietnam Corporation, where I worked on building and maintaining the database for the company's products and services.",      descBullets: [
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      // ]
     }
   ]
 };
@@ -372,8 +372,8 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  number: "+84 977 683 533",
+  email_address: "nguyenmanh180102@gmail.com"
 };
 
 // Twitter Section

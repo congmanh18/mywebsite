@@ -156,24 +156,30 @@ const workExperiences = {
       company: "Techmaster Vietnam",
       companylogo: require("./assets/images/techmaster.png"),
       date: "March 2025 – Present",
-      desc: "I am a backend developer at Techmaster Vietnam, where I work on building and maintaining the backend infrastructure for the company's products and services."
+      desc: "I am a backend developer at Techmaster Vietnam, where I work on building and maintaining the backend infrastructure for the company's products and services."      
     },
     {
       role: "Backend Developer",
-      company: "CMN Express",
+      company: "SG Nhat Minh tranportation service trading company limited",
       companylogo: require("./assets/images/cmnexpress.png"),
-      date: "May 2017 – May 2018",
-      desc: "I was a backend developer at CMN Express, where I worked on building and maintaining the backend infrastructure for the company's products and services."
+        date: "August 2024 – February 2025",
+        desc: "I'm a remote developer helped the company to build the backend infrastructure.",
+        descBullets: [
+          "Team up with the front end team and the guys at SharkyTech to build CMN Express Tech.",
+          "Have a healthy study time with the team.",
+        ]
     },
     {
       role: "DBA Intern ",
       company: "HPT Vietnam Corporation",
       companylogo: require("./assets/images/hpt.webp"),
-      date: "June 2018 – Present",
-      // desc: "I was a DBA intern at HPT Vietnam Corporation, where I worked on building and maintaining the database for the company's products and services.",      descBullets: [
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      // ]
+      date: "June 2024 – August 2024",
+      desc: "DBA intern at HPT Vietnam Corporation.",
+      descBullets: [
+        "Learn about the Oracle database and the tools to manage the database.",
+        "Get to know about Oracle Database architecture",
+        "Learn how to use support tools and write reports",
+      ]
     }
   ]
 };
@@ -195,19 +201,19 @@ const bigProjects = {
     {
       image: require("./assets/images/saayaHealthLogo.webp"),
       projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectDesc: "Saayahealth is a platform for healthcare providers to manage their patients and their health records.",
       footerLink: [
         {
           name: "Visit Website",
           url: "http://saayahealth.com/"
-        }
-        //  you can add extra buttons here.
+        },
+        //  you can add extra buttons here. 
       ]
     },
     {
-      image: require("./assets/images/pethub.png"),
-      projectName: "PetHub",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/nextuLogo.webp"),
+      projectName: "Nextu",
+      projectDesc: "Explore Natural Language Processing with Nextu.",
       footerLink: [
         {
           name: "Visit Website",
@@ -216,20 +222,20 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/pethub.png"),
-      projectName: "PetHub",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/wse.jpg"),
+      projectName: "World Study English",
+      projectDesc: "World Study English is a center for learning English, I was develop the website for them.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "https://world-study-english.vercel.app/"
         }
       ]
     },
     {
       image: require("./assets/images/pethub.png"),
       projectName: "PetHub",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectDesc: "A platform for pet lovers to find and share information about pets. Care for your pet with PetHub.",
       footerLink: [
         {
           name: "Visit Website",
@@ -237,7 +243,6 @@ const bigProjects = {
         }
       ]
     },
-    
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -307,24 +312,8 @@ const achievementSection = {
 
 const blogSection = {
   title: "Blogs",
-  subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
-  blogs: [
-    {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
-    },
-    {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
+  subtitle: "Where I share my thoughts and experiences about technology and life.",
+  display: true, // Cho phép hiển thị section này
 };
 
 // Talks Sections

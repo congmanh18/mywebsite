@@ -26,14 +26,18 @@ export default function Blogs() {
             description: post.frontmatter.description || post.excerpt,
             date: post.frontmatter.date,
           }));
-          setBlogs(fetchedBlogs);
+          setBlogs(fetchedBlogs.slice(0, 6)); // Only keep the first 6 blogs
         })
         .catch((error) => {
-          console.error("Lỗi khi fetch dữ liệu blog:", error);
+          console.error("Error fetching blog data:", error);
           setError(true);
         });
     }
   }, []);
+
+  const openUrlInNewTab = (url) => {
+    window.open(url, "_blank");
+  };
 
   if (!blogSection.display) {
     return null;
@@ -51,15 +55,27 @@ export default function Blogs() {
         <div className="blog-main-div">
           <div className="blog-text-div">
             {error ? (
-              <p>Lỗi khi tải blog, vui lòng thử lại sau.</p>
+              <p>Error loading blogs, please try again later.</p>
             ) : blogs.length > 0 ? (
               blogs.map((blog, i) => (
                 <BlogCard key={i} isDark={isDark} blog={blog} />
               ))
             ) : (
-              <p>Đang tải bài viết...</p>
+              <p>Loading blog posts...</p>
             )}
           </div>
+        </div>
+
+        {/* Footer Link Section */}
+        <div className="footer-link-container">
+          {blogSection.footerLink && (
+            <span
+              className={isDark ? "dark-mode project-tag" : "project-tag"}
+              onClick={() => openUrlInNewTab(blogSection.footerLink.url)}
+            >
+              {blogSection.footerLink.name}
+            </span>
+          )}
         </div>
       </div>
     </Fade>

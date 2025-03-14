@@ -45,6 +45,39 @@
   color: $subTitle;
 }
 
+.footer-link-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  width: 100%; /* Make sure it takes full width */
+  margin-top: 40px; /* Space between the blogs and footer link */
+}
+
+.footer-link-container span.project-tag {
+  background: $buttonColor; /* Retain your button color variable */
+  color: $lightBackground3; /* Text color */
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 8px; /* Increase border radius for a smoother curve */
+  display: inline-flex;
+  font-size: 1rem; /* Larger font size */
+  height: 3em; /* Increased height for a more prominent button */
+  justify-content: center;
+  white-space: nowrap;
+  line-height: 2; /* Adjust line height to match the increased height */
+  margin: 0 0.75rem 0.75rem 0; /* Slightly increased margin */
+  padding: 0 1em; /* Larger padding for a bigger button */
+  cursor: pointer;
+  transition: 0.3s ease-in-out; /* Slightly slower transition for smooth hover effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow to add depth */
+}
+
+.footer-link-container span.project-tag:hover {
+  background: darken($buttonColor, 10%); /* Darken the button on hover */
+  transform: scale(1.05); /* Slight scaling effect on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+
 /* Media Query */
 @media (max-width: 1380px) {
   .blog-header-text {

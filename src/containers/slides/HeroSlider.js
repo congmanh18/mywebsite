@@ -1,13 +1,14 @@
 import React from "react";
 import "./HeroSlider.scss";
 
+// List of images located in the public folder
 const images = [
-  "https://i.imgur.com/gXUtcmS.png",
-  "https://i.imgur.com/NLKMMUk.jpeg",
-  "https://i.imgur.com/XjdLtG8.png",
-  "https://i.imgur.com/sYb4GJC.png",
-  "https://i.imgur.com/rz5fmsH.jpeg",
-  "https://i.imgur.com/hHttimW.png"
+  "/personal/gXUtcmS.png",
+  "/personal/baovekhoaluan.png",
+  "/personal/XjdLtG8.png",
+  "/personal/sYb4GJC.png",
+  "/personal/rz5fmsH.png",
+  "/personal/hHttimW.png"
 ];
 
 const HeroSlider = () => {

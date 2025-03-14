@@ -115,13 +115,13 @@ const educationInfo = {
       duration: "September 2013 - May 2017",
       desc: ""
     },
-    {
-      schoolName: "Hoai Son Primary School No. 1",
-      logo: require("./assets/images/thhs.png"),                       
-      subHeader: "Primary School",
-      duration: "September 2008 - May 2013",
-      desc: ""
-    }
+    // {
+    //   schoolName: "Hoai Son Primary School No. 1",
+    //   logo: require("./assets/images/thhs.png"),                       
+    //   subHeader: "Primary School",
+    //   duration: "September 2008 - May 2013",
+    //   desc: ""
+    // }
   ]                       
 };
 
@@ -212,7 +212,7 @@ const bigProjects = {
     },
     {
       image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
+      projectName: "XuyenXam",
       projectDesc: "Explore Natural Language Processing with Nextu.",
       footerLink: [
         {
@@ -239,7 +239,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "https://pethub-market.vercel.app/"
         }
       ]
     },
@@ -314,6 +314,11 @@ const blogSection = {
   title: "Blogs",
   subtitle: "Where I share my thoughts and experiences about technology and life.",
   display: true, // Cho phép hiển thị section này
+  footerLink:
+    {
+      name: "Visit My Blog Website",
+      url: "https://lucas-dev-blog.vercel.app/"
+    },
 };
 
 // Talks Sections
